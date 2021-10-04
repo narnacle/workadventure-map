@@ -1,6 +1,6 @@
 var isFirstTimeTuto = false;
-var textFirstPopup = 'Hey ! This is how to start a discussion with someone ! You can be 4 max in a bubble.';
-var textSecondPopup = 'You can also use the chat to communicate ! ';
+var textFirstPopup = 'Hallo ! Zo start je een discussie met iemand! Je mag maximaal 4 in een bubbel zitten.';
+var textSecondPopup = 'U kunt de chat ook gebruiken om te communiceren!';
 var targetObjectTutoBubble ='Tutobubble';
 var targetObjectTutoChat ='tutoChat';
 var targetObjectTutoExplanation ='tutoExplanation';
@@ -14,21 +14,21 @@ var soundConfig = {
 function launchTuto (){
     WA.openPopup(targetObjectTutoBubble, textFirstPopup, [
         {
-            label: "Next",
+            label: "Volgende",
             className: "popUpElement",
             callback: (popup) => {
                 popup.close();
 
                 WA.openPopup(targetObjectTutoChat, textSecondPopup, [
                     {
-                        label: "Open Chat",
+                        label: "Chat Openen",
                         className: "popUpElement",
                         callback: (popup1) => {
-                            WA.sendChatMessage("Hey you can talk here too!", 'WA Guide');
+                            WA.sendChatMessage("Hé, je kunt hier ook praten!", 'WA-Gids');
                             popup1.close();
-                            WA.openPopup("TutoFinal","You are good to go! Go through the gate to meet the dev team and discover the features !",[
+                            WA.openPopup("TutoFinal","je bent klaar om te gaan! Ga door de poort om het dev-team te ontmoeten en ontdek de functies!",[
                                 {
-                                    label: "Got it!",
+                                    label: "Begrepen!",
                                     className : "success",callback:(popup2 => {
                                         popup2.close();
                                         WA.restorePlayerControl();
@@ -56,16 +56,16 @@ WA.onEnterZone('popupZone', () => {
         launchTuto();
     }
     else {
-        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Do you want to review the explanation?', [
+        popUpExplanation = WA.openPopup(targetObjectTutoExplanation, 'Wil je de uitleg nog eens bekijken?', [
             {
-                label: "No",
+                label: "Nee",
                 className: "error",
                 callback: (popup) => {
                     popup.close();
                 }
             },
             {
-                label: "Yes",
+                label: "Ja",
                 className: "success",
                 callback: (popup) => {
                     popup.close();
