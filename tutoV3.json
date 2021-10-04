@@ -42,7 +42,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"Village.json#entry-from-tuto"
+                 "value":"Village.json#start"
                 }],
          "type":"tilelayer",
          "visible":true,
