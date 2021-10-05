@@ -203,7 +203,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/app.sketchtogether.com\/s\/sketch\/swvXw.1.1\/"
+                 "value":"https:\/\/app.sketchtogether.com\/sketchnow"
                 }],
          "type":"tilelayer",
          "visible":true,
