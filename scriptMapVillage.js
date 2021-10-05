@@ -32,7 +32,15 @@ WA.onEnterZone(zoneEventName, () => {
 })
 
 WA.onEnterZone(zoneTCMName, () => {
-    currentPopup =  WA.openPopup("popUpTCM","Ontmoet het WorkAdventure-team in ons kantoor!",[]);
+    currentPopup =  WA.openPopup("popUpTCM","Ontmoet het WorkAdventure-team in ons kantoor!",[
+        {
+            label: "Ga naar het forum!",
+            className: "popUpElement",
+            callback: (popup => {
+                WA.openTab(urlForum);
+            })
+        }    
+    ]);
 })
 
 
