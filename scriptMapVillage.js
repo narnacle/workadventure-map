@@ -6,6 +6,7 @@ var zoneTCMName = "popupTCMZone";
 var urlPricing = "https://narnacle.shop/";
 var urlSchoolOffer = "https://narnacle.tips/";
 var urlEvent = "https://narnaclenl.backme.org/";
+var urlForum = "https://narnacle.com";
 var currentPopup = undefined;
 
 WA.onEnterZone(zoneOfficeName, () => {
