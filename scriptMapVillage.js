@@ -3,15 +3,15 @@ var zoneEventName = "popupEventZone";
 var zoneSchoolName = "popupSchoolZone";
 var zoneTCMName = "popupTCMZone";
 
-var urlPricing = "https://workadventu.re/pricing";
-var urlSchoolOffer = "https://workadventu.re/school-offer";
-var urlEvent = "https://workadventu.re/events";
+var urlPricing = "https://narnacle.shop/";
+var urlSchoolOffer = "https://narnacle.tips/";
+var urlEvent = "https://narnaclenl.backme.org/";
 var currentPopup = undefined;
 
 WA.onEnterZone(zoneOfficeName, () => {
-   currentPopup =  WA.openPopup("popUpOffice","You can purchase virtual office in WorkAdventure",[
+   currentPopup =  WA.openPopup("popUpOffice","Je kunt merchandise kopen op Narnacle.Shop",[
         {
-            label: "See the pricing",
+            label: "Bekijk het assortiment",
             className: "popUpElement",
             callback: (popup => {
                 WA.openTab(urlPricing);
@@ -20,9 +20,9 @@ WA.onEnterZone(zoneOfficeName, () => {
 })
 
 WA.onEnterZone(zoneEventName, () => {
-    currentPopup =  WA.openPopup("popUpEvent","You can create your own Event in WorkAdventure",[
+    currentPopup =  WA.openPopup("popUpEvent","Je kunt ons WorkAdventure Project steunen op BackMe.org",[
         {
-            label: "See the event page",
+            label: "Zie de pagina",
             className: "popUpElement",
             callback: (popup => {
                 WA.openTab(urlEvent);
@@ -31,14 +31,14 @@ WA.onEnterZone(zoneEventName, () => {
 })
 
 WA.onEnterZone(zoneTCMName, () => {
-    currentPopup =  WA.openPopup("popUpTCM","Come meet the WorkAdventure team in our office ! ",[]);
+    currentPopup =  WA.openPopup("popUpTCM","Ontmoet het WorkAdventure-team in ons kantoor!",[]);
 })
 
 
 WA.onEnterZone(zoneSchoolName, () => {
-    currentPopup =  WA.openPopup("popUpSchool","WorkAdventure is free for teachers a the moment ! Take advantage of our offer ",[
+    currentPopup =  WA.openPopup("popUpSchool","WorkAdventure is momenteel gratis voor iedereen! Houd WorkAdventure draaiende",[
         {
-            label: "See the offer",
+            label: "Doneer aan WorkAdventure",
             className: "popUpElement",
             callback: (popup => {
                 WA.openTab(urlSchoolOffer);
