@@ -183,6 +183,11 @@
          "opacity":1,
          "properties":[
                 {
+                 "name":"jitsiConfig",
+                 "type":"string",
+                 "value":"{\n  \"startWithAudioMuted\": true\n}"
+                }, 
+                {
                  "name":"jitsiRoom",
                  "type":"string",
                  "value":"jisti-room-conf"
